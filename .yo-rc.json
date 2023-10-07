@@ -1,0 +1,22 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.17.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.9.1"
+    },
+    "version": "1.17.4",
+    "libraryName": "sp-fx-with-rtl",
+    "libraryId": "f523c1b1-3673-4015-a1aa-7db2b30f7149",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "sp-fx-with-rtl",
+    "solutionShortDescription": "sp-fx-with-rtl description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "extension",
+    "extensionType": "ApplicationCustomizer"
+  }
+}

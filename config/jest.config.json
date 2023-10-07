@@ -1,0 +1,44 @@
+{
+  "preset": "ts-jest",
+  "rootDir": "../src",
+  "globals": {
+    "ts-jest": {
+        "diagnostics": false
+    }
+  },
+  "moduleFileExtensions": ["ts", "tsx", "js", "json"],
+  "moduleNameMapper": {
+    "\\.(css|scss)$": "<rootDir>/styleMock.js",
+    "@pnp/spfx-controls-react/lib/PeoplePicker": "<rootDir>/styleMock.js"
+  },
+  "transformIgnorePatterns": [
+    "node_modules/?!(lib)"
+  ],
+  "testMatch": ["**/src/**/*.test.+(ts|tsx)"],
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest",
+    "^.+\\.(js|jsx)$": "babel-jest",
+    "node_modules/variables/.+\\.(j|t)sx?$": "babel-jest",
+    "\\.(css|less|sass|scss)$": "<rootDir>/styleMock.js"
+  },
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "<rootDir>/**/*.{ts,tsx}",
+    "!<rootDir>/**/Services/**/!(Mock)*.ts",
+    "!<rootDir>/**/services/**/!(Mock)*.ts",
+    "!<rootDir>/**/*.scss.*",
+    "!<rootDir>/**/webparts/**/*WebPart.ts",
+    "!<rootDir>/**/loc/**/*.*"
+  ],
+  "coverageReporters": ["json", "lcov", "text", "cobertura"],
+  "reporters": ["default", "jest-junit"],
+  "coverageThreshold": {
+    "global": {
+      "branches": 0,
+      "functions": 0,
+      "lines": 0,
+      "statements": 0
+    }
+  },
+  "coverageDirectory": "../jest"
+}

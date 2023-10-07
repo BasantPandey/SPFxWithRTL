@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="1" failures="1" errors="0" time="4.662">
+  <testsuite name="App component" errors="0" failures="1" skipped="0" timestamp="2023-10-07T06:33:36" time="4.455" tests="1">
+    <testcase classname="App component it renders" name="App component it renders" time="0.219">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;User&apos;)
+    at PepoleEx.User [as render] (C:\Data\Projects\gitproject\SPFxWithRTL\src\extensions\spfxWithRtl\componets\peopleEx.tsx:22:52)
+    at render (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom.development.js:14706:31)
+    at finishClassComponent (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom.development.js:14661:24)
+    at updateClassComponent (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom.development.js:15609:16)
+    at beginWork (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom.development.js:19277:12)
+    at performUnitOfWork (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom.development.js:19317:24)
+    at workLoop (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom.development.js:19400:7)
+    at renderRoot (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom.development.js:20307:7)
+    at performWorkOnRoot (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom.development.js:20055:7)
+    at requestWork (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom.development.js:19876:5)
+    at scheduleWork (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom.development.js:20537:3)
+    at scheduleRootUpdate (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom.development.js:20565:10)
+    at updateContainerAtExpirationTime (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom.development.js:20622:10)
+    at ReactRoot.updateContainer [as render] (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom.development.js:20918:3)
+    at render (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom.development.js:21055:14)
+    at fn (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom.development.js:20419:14)
+    at unbatchedUpdates (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom.development.js:21051:5)
+    at Object.legacyRenderSubtreeIntoContainer [as render] (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom.development.js:21120:12)
+    at render (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\@testing-library\react\dist\pure.js:101:25)
+    at Object.fn [as unstable_batchedUpdates] (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom.development.js:20404:12)
+    at unstable_batchedUpdates (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\react-dom\cjs\react-dom-test-utils.development.js:1161:27)
+    at render (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\@testing-library\react\dist\pure.js:97:25)
+    at C:\Data\Projects\gitproject\SPFxWithRTL\src\extensions\spfxWithRtl\componets\PeopleEx.test.tsx:28:11
+    at step (C:\Data\Projects\gitproject\SPFxWithRTL\src\extensions\spfxWithRtl\componets\PeopleEx.test.tsx:52:23)
+    at Object.next (C:\Data\Projects\gitproject\SPFxWithRTL\src\extensions\spfxWithRtl\componets\PeopleEx.test.tsx:33:53)
+    at C:\Data\Projects\gitproject\SPFxWithRTL\src\extensions\spfxWithRtl\componets\PeopleEx.test.tsx:27:71
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt;.__awaiter (C:\Data\Projects\gitproject\SPFxWithRTL\src\extensions\spfxWithRtl\componets\PeopleEx.test.tsx:23:12)
+    at Object.&lt;anonymous&gt; (C:\Data\Projects\gitproject\SPFxWithRTL\src\extensions\spfxWithRtl\componets\PeopleEx.test.tsx:19:22)
+    at Promise.then.completed (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\jest-circus\build\run.js:316:40)
+    at _runTest (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\jest-circus\build\run.js:121:9)
+    at run (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:74:19)
+    at runTestInternal (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\jest\node_modules\jest-runner\build\runTest.js:281:16)
+    at runTest (C:\Data\Projects\gitproject\SPFxWithRTL\node_modules\jest\node_modules\jest-runner\build\runTest.js:341:7)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
